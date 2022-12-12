@@ -1,14 +1,20 @@
 # ArkApi Plugin Config Editor
 
+### This is a editor config.json editor for your Ark survival evovled Plugins from Ark Api
+### Here's the link for the [Ark APi Framework](https://gameservershub.com/forums/resources/ark-server-api.12/)
+### This is made from WPF (Windows Presentation Foundation) in C# .NET6.0
+
+
 # Requirements
 - Windows only
 - ArkApi framework 
 - exact location of servers and plugins folder
 - config.json of plugin
 
-# Description
-### This is a editor config.json editor for your Ark survival evovled Plugins from Ark Api
-### Here's the link for the [Ark APi Framework](https://gameservershub.com/forums/resources/ark-server-api.12/)
+# Libraries
+- Newtonsoft json (Im not really sure if i've used this still confused on System.Text.Json and this one)
+- Okii Dialogs (For openning directories)
+
 
 # Features
 - Modify whole cluster plugins
