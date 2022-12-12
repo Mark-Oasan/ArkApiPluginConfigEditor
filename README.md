@@ -27,7 +27,7 @@
 ```
 "C:/ArkSe/Servers/"
 ```
-![Sample](https://github.com/Mark-Oasan/ArkApiPluginConfigEditor/tree/master/ss/ss1.png)
-![Plugin selection](https://github.com/Mark-Oasan/ArkApiPluginConfigEditor/tree/master/ss/ss2.png)
-![Raw data](https://github.com/Mark-Oasan/ArkApiPluginConfigEditor/tree/master/ss/ss3.png)
-![Maps](https://github.com/Mark-Oasan/ArkApiPluginConfigEditor/tree/master/ss/ss4.png)
+![Sample](https://github.com/Mark-Oasan/ArkApiPluginConfigEditor/tree/master/ss/ss1.png?raw=true)
+![Plugin selection](https://github.com/Mark-Oasan/ArkApiPluginConfigEditor/tree/master/ss/ss2.png?raw=true)
+![Raw data](https://github.com/Mark-Oasan/ArkApiPluginConfigEditor/tree/master/ss/ss3.png?raw=true)
+![Maps](https://github.com/Mark-Oasan/ArkApiPluginConfigEditor/tree/master/ss/ss4.png?raw=true)
