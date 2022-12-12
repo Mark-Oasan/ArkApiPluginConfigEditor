@@ -1,0 +1,287 @@
+{
+	"PlayerUtilities": {
+		"PlayerHelpCommand": "/playerhelp",
+		"PlayerHelpCommandCooldownInSeconds": 60,
+		"ShowPlayerHelpInChat": true,
+		"EverythingIsFREE": false,
+		"UseTokens": false,
+		"DiscordWebHook": "",
+		"GroupPermission": {
+			"Stacking": false,
+			"Default":{
+				"Priority": 99,
+				
+				"PlayerCharacterWipeEnabled": true,
+				"PlayerCharacterWipeUseTokens": false,
+				"PlayerCharacterWipeRequireMindwipe": true,
+				"PlayerCharacterWipePrice": 1,
+
+				
+				"PlayerDemoGunEnabled": true,
+				"PlayerDemoGunUseTokens": false,
+				"PlayerDemoGunPrice": 1,
+
+								
+				"PlayerEnemyScanEnabled": true,
+				"PlayerEnemyScanUseTokens": false,
+				"PlayerEnemyScanPrice": 0,
+				"PlayerEnemyScanRangeFoundations": 300,
+
+					
+				"PlayerGetDeathBagsEnabled": true,				
+				"PlayerGetDeathBagsUseTokens": false,				
+				"PlayerGetDeathBagsPrice": 1,
+				"PlayerGetDeathBagsRespawnCooldownInSeconds": 10,
+				"PlayerGetDeathBagsRangeFoundations": 15,
+
+				
+				"PlayerHarvestRangeEnabled": true,
+				"PlayerHarvestRangeUseTokens": false,
+				"PlayerHarvestRangeClearOnly": false,
+				"PlayerHarvestRangePrice": 1,
+				"PlayerHarvestRangeRangeFoundations": 3,
+				
+
+				"PlayerMakeTribeFounderEnabled": true,
+				"PlayerMakeTribeFounderUseTokens": false,
+				"PlayerMakeTribeFounderMustBeTribeAdmin": true,
+				"PlayerMakeTribeFounderPrice": 1,
+
+	
+				"PlayerPickupGunEnabled": true,
+				"PlayerPickupGunUseTokens": false,
+				"PlayerPickupGunPrice": 1,
+
+
+				"PlayerRenameEnabled": true,
+				"PlayerRenameUseTokens": false,
+				"PlayerRenamePrice": 1,
+				"PlayerRenameBlacklist": [
+					"PermissionBadWordsList"
+				],
+
+
+				"PlayerRenameTribeEnabled": true,
+				"PlayerRenameTribeUseTokens": false,
+				"PlayerRenameTribeMustBeTribeAdmin": true,
+				"PlayerRenameTribePrice": 1,
+				"PlayerRenameTribeBlacklist": [
+					"PermissionBadWordsList"
+				],
+
+
+				"PlayerRepairEnabled": true,
+				"PlayerRepairUseTokens": false,
+				"PlayerRepairPrice": 1,
+				"PlayerRepairRangeFoundations": 20,
+				"PlayerRepairIgnoreRepairCooldown": false,
+				
+				
+				"PlayerRepairGunEnabled": true,
+				"PlayerRepairGunUseTokens": false,
+				"PlayerRepairGunPrice": 1,
+
+
+				"PlayerSuicideEnabled": true,
+				"PlayerSuicideUseTokens": false,
+				"PlayerSuicidePrice": 1,				
+				"PlayerSuicideKnockedOut": false,
+				"PlayerSuicideHandCuffs": false,
+				"PlayerSuicideSitting": false,
+				"PlayerSuicideRiding": false,
+				"PlayerSuicidePicked": false,
+				"PlayerSuicideGrappled": false,
+				"PlayerSuicideMindControl": false,
+				
+				
+				"PlayerTransferGunEnabled": true,
+				"PlayerTransferGunUseTokens": false,
+				"PlayerTransferGunPrice": 1,
+				
+								
+				"PlayerUnlockEngramsEnabled": true,			
+				"PlayerUnlockEngramsUseTokens": false,			
+				"PlayerUnlockEngramsUnlockAll": false,
+				"PlayerUnlockEngramsUnlockMapSpecific": false,				
+				"PlayerUnlockEngramsPrice": 1,				
+				"PlayerUnlockEngramsBlacklist": [
+					"ClothPants",
+					"ClothShirt",
+					"ThatchFloor"
+				]
+			}
+		},
+		
+		"PlayerCharacterWipe":{
+			"Enabled": true,
+			"Description": " - Resets your player points but not your engrams",
+			"ChatCommand": "/charwipe",
+			"TokenName": "PlayerCharacterWipe",
+			"CommandCooldownInSeconds": 5
+		},		
+		"PlayerDemoGun":{
+			"Enabled": true,
+			"Description": " - Demolish the structure you shoot with the Fabricated Pistol",
+			"ChatCommand": "/demogun",
+			"TokenName": "PlayerDemolishGun"
+		},
+        "PlayerEnemyScan":{
+			"Enabled": true,
+			"Description": " - Scan for enemies in the area",
+			"ChatCommand": "/enemyscan",
+			"TokenName": "PlayerEnemyScan",
+			"CommandCooldownInSeconds": 5
+		},
+		"PlayerGetDeathBags":{
+			"Enabled": true,
+			"Description": " - get your inventory from your dead body",
+			"ChatCommand": "/getbags",
+			"TokenName": "PlayerGetDeathBags",
+			"CommandCooldownInSeconds": 5
+		},
+		"PlayerHarvestRange":{
+			"Enabled": true,
+			"Description": " - harvest the area around you",
+			"ChatCommand": "/clear",
+			"TokenName": "PlayerHarvestRange",
+			"CommandCooldownInSeconds": 5
+		},
+		"PlayerMakeTribeFounder":{
+			"Enabled": true,
+			"Description": " - Makes you the tribe owner",
+			"ChatCommand": "/makeowner",
+			"TokenName": "PlayerMakeTribeFounder",
+			"CommandCooldownInSeconds": 5
+		},
+		"PlayerPickupGun":{
+			"Enabled": true,
+			"Description": " - Pick up the structure you shoot with the Fabricated Pistol",
+			"ChatCommand": "/pickupgun",
+			"TokenName": "PlayerPickupGun"
+		},
+		"PlayerRename":{
+			"Enabled": true,
+			"Description": " - Rename the player",
+			"ChatCommand": "/rename",
+			"TokenName": "PlayerRename",
+			"CommandCooldownInSeconds": 5,
+			"MasterBlacklist": [
+				"GlobalBadWordsList"
+			]
+		},
+		"PlayerRenameTribe":{
+			"Enabled": true,
+			"Description": " - Rename the tribe",
+			"ChatCommand": "/renametribe",
+			"TokenName": "PlayerRenameTribe",
+			"CommandCooldownInSeconds": 5,
+			"MasterBlacklist": [
+				"GlobalBadWordsList"
+			]
+		},
+		"PlayerRepair":{
+			"Enabled": true,
+			"Description": " - Repair the structures in your area",
+			"ChatCommand": "/repair",
+			"TokenName": "PlayerRepair",
+			"CommandCooldownInSeconds": 5
+		},
+		"PlayerRepairGun":{
+			"Enabled": true,
+			"Description": " - Repair the structure you shoot with the Fabricated Pistol",
+			"ChatCommand": "/repairgun",
+			"TokenName": "PlayerRepairGun"	
+		},	
+		"PlayerSuicide":{
+			"Enabled": true,
+			"Description": " - Kill yourself",
+			"ChatCommand": "/die",
+			"TokenName": "PlayerSuicide",
+			"CommandCooldownInSeconds": 5
+		},
+		"PlayerTransferGun":{
+			"Enabled": true,
+			"Description": " - Transfer one inventory to another using the Fabricated Pistol",
+			"ChatCommand": "/transfergun",
+			"TokenName": "PlayerTransferGun"	
+		},
+		"PlayerUnlockEngrams":{
+			"Enabled": true,
+			"Description": " - Unlock map engrams up to your current level",
+			"ChatCommand": "/engrams",
+			"TokenName": "PlayerUnlockEngrams",
+			"CommandCooldownInSeconds": 5,
+			"MasterBlacklist": [
+				"TekSpaceWhaleSaddle"
+			]
+		},
+	
+	
+		"Messages":{
+			"GroupPermission":{
+				"Default": {
+					"Priority": 99,					
+
+					"CommandCooldown": "You cannot use this command so quickly, try again in a moment",
+					"CommandPurchased": "Command purchased for {} points",
+					"CommandPurchased2": "Command purchased for {} tokens",
+					"InvalidName": "That name is not valid",
+					"MessagesMustBeTribeAdmin": "You must be a tribe admin to use this command",
+					"NoPermission": "You do not have permission to use this command",
+					"NoPoints": "You do not have enough points ({} needed)",
+					"NotEnabled": "This feature is not enabled on the server",
+					"NotEnoughTokens": "You don't have enought tokens to use this command",
+					"PlayerCharacterWipe": "Character wipe complete",
+					"PlayerCharacterWipeNoMindwipe": "You need at least 1 mindwipe in your inventory to use this command",
+					"PlayerDemoGunOff": "Demo gun mode off",
+					"PlayerDemoGunOn": "Demo gun mode on",
+					"PlayerEnemyScanEnemyPlayers1": "There are at least {} online enemy players in the area",
+					"PlayerEnemyScanEnemyPlayers2": "No online enemy players in the area",
+					"PlayerEnemyScanEnemyStructures1": "There are at least {} differect tribe sructures in the area",
+					"PlayerEnemyScanEnemyStructures2": "No tribes structures in the area",
+					"PlayerGetDeathBags": "Death bag(s) retrieved",
+					"PlayerGetDeathBagsNone": "No death bag(s) found.",
+					"PlayerHarvestRange": "Harvest complete",
+					"PlayerHelpCommand": "All your available commands for Player Utilities have been printed out for you in the tab console. Press your tab twice to see the results.",
+					"PlayerHelpCommandResults": "Command: {} for {} points/tokens",
+					"PlayerMakeTribeFounder": "Make tribe owner complete",
+					"PlayerNoDamage": "Repair cancelled, could not find damaged structures",
+					"PlayerNoRepair": "Repair cancelled, no structures are repairable right now.",
+					"PlayerNoStructures": "Repair cancelled, could not find tribe structures",
+					"PlayerNotEnoughResources": "Repair cancelled, not enough resources found",
+					"PlayerPickupGunOff": "Pickup gun mode off",
+					"PlayerPickupGunOn": "Pickup gun mode on",
+					"PlayerRename": "Player rename complete",
+					"PlayerRenameTribe": "Rename tribe complete",
+					"PlayerRepair": "Repair complete. Repaired {} out of {} possible structures.",
+					"PlayerRepairGunOff": "Repair gun mode off",
+					"PlayerRepairGunOn": "Repair gun mode on",
+					"PlayerSuicide": "Suicide complete",
+					"PlayerSuicideDead": "You cannot use this command because you are already dead",
+					"PlayerSuicideGrappled": "You cannot use this command while attached or grappled to another player",
+					"PlayerSuicideHandcuffs": "You cannot use this command while wearing handcuffs",
+					"PlayerSuicideKO": "You cannot use this command while unconscious",
+					"PlayerSuicideMindControl": "You cannot use this command while you are mind controlled by a Noglin",
+					"PlayerSuicidePicked": "You cannot use this command while you are picked by another dino",
+					"PlayerSuicideRiding": "You cannot use this command while riding a dino",
+					"PlayerSuicideSitting": "You cannot use this command while sitting",
+					"PlayerTransferGunClear": "Transfer inventory cleared.",
+					"PlayerTransferGunComplete": "Transfered {} items.",
+					"PlayerTransferGunInvFull": "Target inventory is full",
+					"PlayerTransferGunNoTransfer1": "No items were transferred",
+					"PlayerTransferGunNoTransfer2": "Some items were not transferred",
+					"PlayerTransferGunOff": "Transfer gun mode off",
+					"PlayerTransferGunOn": "Transfer gun mode on",
+					"PlayerTransferGunSet": "Transfer source inventory is set.",
+					"PlayerUnlockEngrams": "Unlock engrams complete",
+					"PlayerUnlockEngramsFail": "You cannot unlock that engram",
+					"SenderNameInChat": "SERVER",
+					"Points": "Points",
+					"Tokens": "Tokens",
+					"Free": "Free"
+					
+				}
+			}
+		}
+	}
+}

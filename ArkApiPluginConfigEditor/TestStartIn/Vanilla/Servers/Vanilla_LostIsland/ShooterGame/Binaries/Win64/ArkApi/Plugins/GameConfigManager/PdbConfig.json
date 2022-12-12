@@ -1,0 +1,11 @@
+{
+  "structures": [
+	"FConfigCacheIni"
+  ],
+  "functions": [
+	"PrimalGameIni_GameModeInitValues"
+  ],
+  "globals": [
+	"GConfig"
+  ]
+}

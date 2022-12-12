@@ -1,0 +1,9 @@
+{
+  "Max_Dino_Counts": {
+    "Blueprint'/Game/PrimalEarth/Dinos/Tusoteuthis/Mega_Tusoteuthis_Character_BP.Mega_Tusoteuthis_Character_BP'": 5,
+    "Blueprint'/Game/PrimalEarth/Dinos/Coelacanth/Coel_Character_BP.Coel_Character_BP'": 600
+  },
+  "WriteDumpsToFile": false,
+  "DestroyDinosOverLevel": true,
+  "MaxDinoLevel": 300
+}

@@ -1,0 +1,153 @@
+{
+  "General": {
+    "ImprintNewRider": true,
+    "FreeDinoRespecEnabled": true,
+    "ShopDinoRespecEnabled": false,
+    "RefundShopDinoRespec": 0
+  },
+  "Commands": {
+    "LevelHP": "/levelhp",
+    "LevelSpeed": "/levelspeed",
+    "FreeRespec": "/dinorespec",
+    "ShopRespec": "shopdinorespec",
+    "ConfigReload": "CreaturesPlus.Reload"
+  },
+  "Dinos": [
+    {
+      "Dino": "TekStrider_Character_BP",
+      "PersonalTamedDinoCost": 10
+    },
+    {
+      "Dino": "Argent_Character_BP",
+      "PreventRiding": false,
+      "PreventBreeding": false
+    },
+    {
+      "Dino": "Ptero_Character_BP",
+      "PersonalTamedDinoCost": 2,
+      "Stats": {
+        "Stamina": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Weight": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": 0
+        },
+        "Movement Speed": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.02,
+          "WildMaxPerPoint": 0.01,
+          "CapPoints": 5
+        }
+      }
+    },
+    {
+      "Dino": "IceJumper_Character_BP",
+      "Stats": {
+        "Health": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Stamina": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": 10
+        },
+        "Oxygen": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Food": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Weight": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Melee Damage": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.1,
+          "CapPoints": -1
+        },
+        "Movement Speed": {
+          "AddOnTame": 0.35,
+          "ImprintGives": 0.2,
+          "MaxPerPoint": 0.02,
+          "CapPoints": 10
+        }
+      }
+    }
+  ],
+  "Messages": {
+    "Sender": {
+      "Message": "Testing"
+    },
+    "MaxStatPoints": {
+      "Message": "This stat cannot be leveled further.",
+      "Scale": 1.5,
+      "DisplayTime": 3.0,
+      "Color": "Yellow"
+    },
+    "DinoRespec": {
+      "Message": "Your dinos stats have been reset.",
+      "Scale": 1.5,
+      "DisplayTime": 3.0,
+      "Color": "Cyan"
+    },
+    "RefundDinoRespec": {
+      "Message": "You must be mounted! Your {0} shop points have been refunded!",
+      "Scale": 1.5,
+      "DisplayTime": 3.0,
+      "Color": "Red"
+    },
+    "NotMounted": {
+      "Message": "You must be mounted to use this command!",
+      "Scale": 1.5,
+      "DisplayTime": 3.0,
+      "Color": "Red"
+    },
+    "LeveledStat": {
+      "Message": "{0} was leveled up {1} times!",
+      "Scale": 1.5,
+      "DisplayTime": 3.0,
+      "Color": "Green"
+    },
+    "PreventRiding": {
+      "Message": "Riding this dino is not allowed.",
+      "Scale": 1.5,
+      "DisplayTime": 1.5,
+      "Color": "Red"
+    },
+    "PreventBreeding": {
+      "Message": "Breeding this dino is not allowed.",
+      "Scale": 1.5,
+      "DisplayTime": 2.5,
+      "Color": "Red"
+    }
+  },
+  "Mysql": {
+    "UseMysql": false,
+    "MysqlHost": "localhost",
+    "MysqlPort": 3306,
+    "MysqlUser": "sqlusername",
+    "MysqlPass": "sqlpassword",
+    "MysqlDB": "mydatabasename"
+  }
+}

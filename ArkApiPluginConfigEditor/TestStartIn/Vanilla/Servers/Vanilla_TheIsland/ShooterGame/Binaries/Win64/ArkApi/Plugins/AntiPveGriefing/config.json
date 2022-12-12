@@ -1,0 +1,25 @@
+{
+  "AdminIgnoreProtections": "True",
+  "PreventionOptions": {
+    "PlayerDamage": {
+      "PreventAnyDamageToOfflinePlayers": "True",
+      "GraceSecondsOfInvincibilityAfterLogin": "30"
+    },
+    "InventoryAccess": {
+      "PreventAccessForEnemies": "True",
+      "AllowAccessToUnlockedContainers": "True",
+      "UnlockedContainersToAllow": {},
+      "AllowInteractionsBetweenAllies": "False"
+    },
+    "PlayerCarrying": {
+      "PreventCarryingByEnemies": "False",
+      "AllowInteractionsBetweenAllies": "True"
+    },
+    "ItemPickup": {
+      "PreventItemPickup": "False",
+      "AllowInteractionsBetweenAllies": "True"
+    },
+    "PatchWanderingDinoMating": "True",
+    "PatchCloningEnemyDinos": "True"
+  }
+}

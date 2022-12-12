@@ -1,0 +1,470 @@
+{
+	"DinoUtilities": {
+		"PlayerHelpCommand": "/dinohelp",
+		"PlayerHelpCommandCooldownInSeconds": 60,
+		"ShowPlayerHelpInChat": true,
+		"EverythingIsFREE": false,
+		"UseTokens": false,
+		"DiscordWebHook": "",
+		"GroupPermission": {
+			"Default":{
+				"Priority": 99,
+				
+				"DinoChangeGenderEnabled": true,
+				"DinoChangeGenderUseTokens": true,
+				"DinoChangeGenderPrice": 0,
+				"DinoChangeGenderBlacklist": [
+					"Dodo"
+				],
+				
+				"DinoClaimBabiesEnabled": true,
+				"DinoClaimBabiesPrice": 0,
+				"DinoClaimBabiesUseSoulTrapsForCryopods": false,
+				"DinoClaimBabiesPutInCryopods": false,
+				"DinoClaimBabiesRequireCryopods": true,
+				"DinoClaimBabiesFoundations": 10,
+				"DinoClaimBabiesImprintValue": 0,
+				"DinoClaimBabiesImprintValueOverride": {	
+					"Blueprint'/Game/PrimalEarth/Dinos/Para/Para_Character_BP.Para_Character_BP'" : 0.50,
+					"Rex" : 0.75
+				},	
+				"DinoClaimBabiesBlacklist": [
+					"Dodo"
+				],
+				
+				
+				"DinoFastpodRangeEnabled": true,
+				"DinoFastpodRangeUseSoulTrapsForCryopods": false,
+				"DinoFastpodRangeNameEnabled": true,
+				"DinoFastpodRangeBabies": true,
+				"DinoFastpodRangeRequireCryopods": true,
+				"DinoFastpodRangeFoundations": 10,
+				"DinoFastpodRangePrice": 0,
+				"DinoFastpodRangeBlacklist": [
+					"Dodo"
+				],
+				
+				
+				"DinoFastpodSingleEnabled": true,
+				"DinoFastpodSingleUseSoulTrapsForCryopods": false,
+				"DinoFastpodSinglePrice": 0,
+				"DinoFastpodSingleRequireCryopods": true,
+				"DinoFastpodSingleBabies": true,
+				"DinoFastpodSingleBlacklist": [
+					"Dodo"
+				],
+				
+				"DinoFeedRangeEnabled": true,
+				"DinoFeedRangeNameEnabled": true,
+				"DinoFeedRangePrice": 0,
+				"DinoFeedRangeFoundations": 20,
+				"DinoFeedRangeBlacklist": [
+					"Blueprint'/Game/PrimalEarth/Dinos/Para/Para_Character_BP.Para_Character_BP'"
+				],
+
+				"DinoFinishCloneEnabled": true,
+				"DinoFinishClonePrice": 0,
+				"DinoFinishCloneBlacklist": [
+					"Blueprint'/Game/PrimalEarth/Dinos/Argentavis/Argent_Character_BP.Argent_Character_BP'"
+				],
+
+				
+				"DinoHatchEggEnabled": true,
+				"DinoHatchEggPrice": 0,
+				"DinoHatchEggBlacklist": [
+					"Dodo"
+				],
+				
+				"DinoHaveBabyEnabled": true,
+				"DinoHaveBabyPrice": 0,
+				"DinoHaveBabyFoundations": 10,
+				"DinoHaveBabyBlacklist": [
+					"Dodo"
+				],
+				
+				
+				"DinoImprintEnabled": true,
+				"DinoImprintPrice": 0,
+				"DinoImprintBabiesOnly": true,
+				"DinoImprintPriceOverride": {
+					"Blueprint'/Game/PrimalEarth/Dinos/Para/Para_Character_BP.Para_Character_BP'" : 100,
+					"Rex" : 0
+				},
+				"DinoImprintValue": 1.0,
+				"DinoImprintValueOverride": {	
+					"Blueprint'/Game/PrimalEarth/Dinos/Para/Para_Character_BP.Para_Character_BP'" : 0.50,
+					"Rex" : 0.75
+				},				
+				"DinoImprintBlacklist": [
+					"Dodo"
+				],
+				
+				
+				"DinoImprintChangeEnabled": true,
+				"DinoImprintChangePrice": 0,
+				"DinoImprintChangeBlacklist": [
+					"Dodo"
+				],
+				
+				
+				"DinoKillEnabled": true,
+				"DinoKillPrice": 0,
+				"DinoKillBlacklist": [ 
+					"Dodo" 
+				],
+				
+				
+				"DinoMateNowEnabled": true,
+				"DinoMateNowPrice": 0,
+				"DinoMateNowFoundations": 10,
+				"DinoMateNowBlacklist": [
+					"Dodo"
+				],
+				
+				
+				"DinoMindWipeEnabled": true,
+				"DinoMindWipePrice": 0,
+				"DinoMindWipeBlacklist": [
+					"Dodo"
+				],
+				
+				
+				"DinoRaiseBabyEnabled": true,
+				"DinoRaiseBabyPrice": 0,
+				"DinoRaiseBabyImprintValue": 0,
+				"DinoRaiseBabyBlacklist": [
+					"Dodo"
+				],
+				
+				
+				"DinoResetMatingEnabled": true,
+				"DinoResetMatingPrice": 0,
+				"DinoResetMatingFoundations": 10,
+				"DinoResetMatingBlacklist": [
+					"Dodo"
+				],
+				
+				
+				"DinoTurretModeEnabled": true,
+				"DinoTurretModeNameEnabled": true,				
+				"DinoTurretModeFoundations": 10,
+				"DinoTurretModePrice": 0,
+				"DinoTurretModeBlacklist": [
+					"Dodo"
+				],
+				
+
+				"DinoUnNeuterEnabled": true,
+				"DinoUnNeuterPrice": 0,
+				"DinoUnNeuterBlacklist": [
+					"Dodo"
+				],
+
+				
+				"DinoWakeEnabled": true,
+				"DinoWakePrice": 0,
+				"DinoWakeBlacklist": [ 
+					"Dodo" 
+				]	
+				
+				
+			}
+		},		
+		
+		"DinoChangeGender":{
+			"Enabled": true,
+			"ChatCommand": "/cg",
+			"TokenName": "DinoChangeGender",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+					"Doed"
+			]
+		},
+		
+		"DinoClaimBabies":{
+			"Enabled": true,
+			"ChatCommand": "/claimbabies",
+			"TokenName": "DinoClaimBabies",
+			"MaxLimit": 20,
+			"CommandCooldownInSeconds": 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},
+		"DinoFastpodRange":{
+			"Enabled": true,
+			"CryopodBlueprintOverride": "",
+			"AutoEquip": true,
+			"MaxLimit": 20,  
+			"ChatCommand": "/pods",
+			"TokenName": "DinoFastpodRange",
+			"CommandCooldownInSeconds": 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},
+		"DinoFastpodSingle":{
+			"Enabled": true,
+			"CryopodBlueprintOverride": "",
+			"AutoEquip": true,
+			"ChatCommand": "/pod",
+			"TokenName": "DinoFastpodSingle",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+				"TekStrider",
+				"Doed"
+			]
+		},
+		"DinoFeedRange":{  
+			"Enabled": true,
+			"ChatCommand": "/feed",
+			"MaxLimit": 20,
+			"TokenName": "DinoFeedRange",
+			"CommandCooldownInSeconds": 5,			
+			"MasterBlacklist": [
+					"Doed"
+			]
+		},
+		"DinoFinishClone":{
+			"Enabled": true,
+			"ChatCommand": "/finishclone",
+			"TokenName": "DinoFinishClone",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+				"Blueprint'/Game/PrimalEarth/Dinos/Argentavis/Argent_Character_BP.Argent_Character_BP'"
+			]
+		},		
+		"DinoHatchEgg":{  
+			"Enabled": true,
+			"ChatCommand": "/hatch",
+			"TokenName": "DinoHatchEgg",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},		
+		"DinoHaveBaby":{
+			"Enabled": true,
+			"ChatCommand": "/givebirth",
+			"TokenName": "DinoHaveBaby",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},
+		"DinoImprint":{
+			"Enabled": true,
+			"ChangeOwner": true,
+			"ChatCommand": "/imprint",
+			"TokenName": "DinoImprint",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [ 
+				"Doed" 
+			]
+		},
+		"DinoImprintChange":{
+			"Enabled": true,
+			"IgnoreNeutered": true,
+			"ChatCommand": "/imprintchange",
+			"TokenName": "DinoImprintChange",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [ 
+				"Doed" 
+			]
+		},
+		"DinoKill":{ 
+			"Enabled": true,
+			"ChatCommand": "/dkill",
+			"TokenName": "DinoKill",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},		
+		"DinoMateNow":{
+			"Enabled": true,
+			"ChatCommand": "/matenow",
+			"TokenName": "DinoMateNow",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},
+		"DinoMindWipe":{
+			"Enabled": true,
+			"ChatCommand": "/dmindwipe",
+			"TokenName": "DinoMindWipe",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},
+		"DinoRaiseBaby":{
+			"Enabled": true,
+			"ChatCommand": "/raisebaby",
+			"TokenName": "DinoRaiseBaby",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},
+		"DinoResetMating":{
+			"Enabled": true,
+			"ChatCommand": "/resetmating",
+			"TokenName": "DinoResetMating",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},
+		"DinoTurretMode":{
+			"Enabled": true,
+			"MaxLimit": 20,
+			"ChatCommand": "/turretmode",
+			"TokenName": "DinoTurretMode",
+			"CommandCooldownInSeconds": 5,
+			"MasterBlacklist": [
+				"Doed"
+			]
+		},
+		"DinoUnNeuter":{
+			"Enabled": true,
+			"ChatCommand": "/unneuter",
+			"TokenName": "DinoUnNeuter",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [
+					"Doed"
+			]
+		},		
+		"DinoWake":{
+			"Enabled": true,
+			"ChatCommand": "/wake",
+			"TokenName": "DinoWake",
+			"CommandCooldownInSeconds": 5,
+			"FoundationDistanceLimit" : 5,
+			"MasterBlacklist": [ 
+				"Doed" 
+			]
+		},
+		
+		
+		"WildDinoColorSchemes":{
+			"Enabled": true,
+			"DisableWhileEventsAreActive": true,
+			"UniqueRandomColoring": false,    
+			"Colors": [ 
+				1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+				32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 
+				61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 
+				90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 
+				215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226
+			],
+			"Dinos": {
+				"*": [
+					{	"MinLevel": 1, "MaxLevel": 30, "Region": 0,			"Color": 1	},				
+					{	"MinLevel": 1, "MaxLevel": 30, "Region": 1,			"Color": "random" },		
+					{	"MinLevel": 1, "MaxLevel": 30, "Region": "all",		"Color": "random" },        
+					{	"MinLevel": 1, "MaxLevel": 30, "Region": [2, 3, 4],	"Color": [30, 40, 50] }		
+				]
+			},
+			"Blacklist": [ 
+				"Dodo"
+			],
+			"RCONColorDinos": [
+				{
+					"Name": "PinkDodos",
+					"Dinos": {
+						"*": [
+							{	"Region": "all", "Color": 6 }
+						]
+					},
+					"Blacklist": []
+				},
+				{
+					"Name": "BlueDodos",
+					"Dinos": {
+						"Dodo": [
+							{	"Region": "all", "Color": 54 }
+						]
+					},
+					"Blacklist": []
+				}
+			]
+		},
+		"Messages":{
+			"GroupPermission":{
+				"Default": {
+					"Priority": 99,
+					
+					"BlacklistedDino": "You cannot use that command on this dino",
+					"CommandCooldown": "You cannot use this command so quickly, try again in a moment",
+					"CommandPurchased": "Command purchased for {} points/tokens",
+					"CryoAdult": "You must cryopod an adult dino",
+					"CryoSickness": "The dino must be awake",
+					"CryoSickness2": "The dino must be asleep",
+					"DinoClaimBabies": "Dino claim babies complete",
+					"DinoClaimBabiesInvalid": "You cannot claim babies near other tribe structures.",
+					"DinoCryopod": "Dino cryopod complete",
+					"DinoCryopodFail": "Could not cryopod dino. Your inventory may be full.",
+					"DinoFeed": "Fed {} dinos.",
+					"DinoFinishCloning": "Dino cloning complete",
+					"DinoFinishCloningFail": "You are not currently cloning a dino",
+					"DinoFinishCloningFail2": "You are not looking at a cloning chamber",
+					"DinoFinishCloningFail3": "You must be looking at your structure",
+					"DinoChangeGender": "Dino change gender complete",
+					"DinoHatchEgg": "Dino hatch egg complete",
+					"DinoHatchEggFail": "Cannot hatch egg under the current temperature conditions",
+					"DinoHaveBaby": "Your dino had a baby!",
+					"DinoImprint": "Dino imprint complete",
+					"DinoImprintChange": "Dino imprint change complete",					
+					"DinoMateNow": "Dino mating complete",
+					"DinoMindWipe": "Dino mindwipe complete",
+					"DinoMindWipeFail": "You cannot mindwipe this dino",
+					"DinoNeutered": "You cannot use this command on a neutered dino",
+					"DinoRaiseBaby": "Dino raise baby complete",
+					"DinoResetMating": "Dino mating reset",
+					"DinoTurretMode": "Dino turret mode complete",
+					"DinoTurretModeError": "You need to add the on or off argument to the command",
+					"DinoUnNeuter": "Dino is no longer neutered",
+					"DinoUnNeuterFail": "This dino is not neutered",
+					"DinoWake": "Dino wake complete",
+					"DinoKill": "Dino kill complete",
+					"DinoKillFail": "Unable to kill dino",					
+					"GetCloser": "You are too far away to use this command",
+					"MustBeImprinted": "This dino is not imprinted yet",
+					"NoDinosFound": "No dinos found",
+					"NoPoints": "You do not have enough points ({} needed)",
+					"NoPoints2": "You do not have enough tokens ({} needed)",
+					"NotEnabled": "This feature is not enabled on the server",
+					"NotEnoughCryopods": "You don't have enough cryopods in your inventory to use this command",
+					"NotEnoughTokens": "You don't have enough tokens to use this command",
+					"NoPermission": "You do not have permission to use this command",
+					"NoTarget": "You must be looking at a dino",
+					"NoTargetEgg": "You must be looking at fertilized egg",
+					"NotPregnant": "This dino is not pregnant",
+					"PlayerHelpCommand": "All your available commands for Dino Utilities have been printed out for you in the tab console. Press your tab twice to see the results.",
+					"PlayerHelpCommandResults": "Command: {} for {} points",
+					"SenderNameInChat": "SERVER",
+					"TargetBaby": "You must be looking at a BABY dino",
+					"TargetInvalid": "You must be looking at YOUR dino",
+					"Points": "Points",
+					"Tokens": "Tokens",
+					"Free": "Free"
+				}
+			}
+		}
+	}
+}

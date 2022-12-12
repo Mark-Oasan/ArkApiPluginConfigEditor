@@ -1,0 +1,48 @@
+{	
+	"EngramResourcePuller":{	    
+		"ChatCommand": "/p",
+		"Groups": {
+			"Default":{
+				"Enabled": true,
+				"FolderName": "pull",
+				"PullRangeInFoundations": 20,
+				"PullFromDinos": true
+			},
+			"VIP":{
+				"Enabled": true,
+				"FolderName": "pull",
+				"PullRangeInFoundations": 40,
+				"PullFromDinos": true
+			}
+		},
+		"IgnoreResourcesPullFrom": {
+			"TekGenerator": [
+				"PrimalItemResource_Element"			
+			],
+			"TekReplicator": [
+				"PrimalItemResource_Element",
+				"ElementShard"
+			],
+			"TekStrider": [
+				"PrimalItemResource_Element",
+				"ElementShard"
+			]
+		},
+		"Messages":{
+			"Groups":{
+				"Default": {
+					"SenderNameInChat": "SERVER",
+					"EngramResourcesPulled": "Engram resources pulled",
+					"EngramResourcesNotPulled": "No resources were found",
+					"NoPermission": "You do not have permission to use this command"
+				},
+				"Spanish": {
+					"SenderNameInChat": "SERVIDOR",
+					"EngramResourcesPulled": "Recursos de engram extraídos",
+					"EngramResourcesNotPulled": "No se encontraron recursos",
+					"NoPermission": "No tienes permiso para usar este comando."
+				}
+			}
+		}
+	}
+}

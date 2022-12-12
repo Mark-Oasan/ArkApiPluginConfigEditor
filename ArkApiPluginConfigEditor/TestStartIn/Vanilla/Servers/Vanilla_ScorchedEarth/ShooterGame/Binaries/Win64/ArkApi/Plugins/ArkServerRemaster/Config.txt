@@ -1,0 +1,122 @@
+// [General Settings]
+DebugLevel=1											// 0-2 : Determines how much info gets output to the dedicated server console window.
+
+EnableUnicodeTextNotifications=false					// Toggles whether in-game text notifications will support unicode characters to display certain texts properly, instead of "???" for example. You should only need to enable this if you play with a language that requires it.
+
+LootQualityMultiplier=1.0								// Sets the Server's LootQualityMultiplier, which normally gets automatically set based on the Server's "OverrideOfficialDifficulty" Ini Setting value. Useful if you want to modify the max wild dino spawn level with the "OfficialDifficulty" setting, and have the Loot Quality Multiplier for beacon loot drops, fishing loot, etc be unaffected. Set to -1.0 to let the server automatically handle this like normal.
+ResourceNodeRespawnPeriodMultiplier=2.0					// Should be used to replace the default "ResourcesRespawnPeriodMultiplier" Ini Setting, as that default setting can sometimes glitch if set above 1.0 for certain resources. Affects how long resource nodes take to respawn once depleted.
+NodeResourcesGatherAmountMultiplier=2.0					// Can be used instead of or in conjunction with the default "HarvestAmountMultiplier" Ini Setting. Multiplies the amount of resources you get from non-corpse resource nodes by this number.
+CorpseResourcesGatherAmountMultiplier=1.0				// Can be used instead of or in conjunction with the default "HarvestAmountMultiplier" Ini Setting. Multiplies the amount of resources you get from creature corpses by this number.
+
+EnableLootNerfGen2=true									// Toggles whether the Genesis2 map has its LootQualityMultiplier overridden to a lower value to stop its loot from being quite so overpowered compared to other maps.
+EnableElementShardNodeNerfGen2=true						// Toggles whether the Element Shard Nodes from the Genesis2 map receive a nerf to the resources that can be harvested from them. When set to true, the Gen2 Element Shard Nodes no longer give full Element, and they have less of a chance at yielding Element Shards to bring them more in line with the shard nodes from the Genesis1 map.
+EnableFederationArmorNerfGen2=true						// Toggles whether the Federation Tek Armor players spawn with on the Genesis2 map requires Element for fuel and the corresponding armor piece's Tekgram unlocked to activate abilities or not.
+FjordurMultiTeleportRunestoneCost=20					// Determines the amount of Runestones players need to be able to summon a teleportation portal from the multi-menu to one of the available realms on the Fjordur map.
+
+
+// [Item Settings]
+EnableCryopodNerf=true									// Toggles whether Cryo-Cooldown is no longer a thing, and instead every creature released from a Cryopod always receives Cryo-Sickness by default.
+CryopodCryoSicknessDuration=300.0						// -1.0-86400.0 (Seconds) : Determines the duration of Cryo-Sickness for creatures released from Cryopods, and scales the amount of torpidity applied so that creatures with slow torpidity recovery rates no longer remain asleep after their sickness wears off by default. Setting below 0 will disable this feature and let Ark handle the Cryopod Cryo-Sickness duration like normal.
+EnableSaddleArmorNerf=true								// Toggles whether Saddle Armor is nerfed to a 2.0 armor coefficient, down from the 4.0 default. This effectively makes a basic saddle with 25 Armor reduce incoming damage by ~33%, rather than by 50% by default.
+SaddleArmorDamagedRateMult=1.0							// Determines the rate at which saddles will lose their armor rating when damaged, with higher numbers causing saddles to lose armor faster. A saddle's durability stat also affects the rate its armor rating is lost per damage taken. A saddle's armor rating cannot fall below its basic default saddle armor amount (~25 for most saddles). Setting this to 0.0 will disable the saddle durability system.
+EnableItemCraftRequirementChanges=true					// Toggles whether the plugin will modify various item crafting costs. It's recommended to clear any "ConfigOverrideItemCraftingCosts" Ini Settings your server may have previously been using, unless you still want to keep your specific changes after taking the plugin's various changes into account.
+EnableItemStackSizeChanges=true							// Toggles whether the plugin will modify any default item stack sizes. Only a few item stack sizes are edited with this plugin. If you want to use your own stack settings/mod you can safely disable this.
+EnableSaddleEngramPointCostChanges=true					// Toggles whether unlocking Saddle Engrams will require a Dermis sample from the creature the saddle is for in the player's inventory, rather than costing Engram Points.
+EnableEngramStudying=true								// Toggles whether the new Engram Studying feature is enabled, allowing the use of the 'Study' folder command on Blueprints to learn the corresponding Engram, bypassing level requirements and other learned engram prerequisites.
+EnableItemCraftingRevamp=true							// Toggles whether the new Crafting System Revamp changes are enabled, namely new item Craft/Repair times and XP earned, and allows structure Craft Speeds to scale with the player's using them.
+ItemCraftRepairTimeScale=1.0							// 0.1-10.0 : Affects the time it takes to Craft/Repair Items when the "EnableItemCraftingRevamp" setting is enabled. Values above 1.0 increase the time it takes multiplicatively. Values below 1.0 reduce the time it takes with a custom scaling formula, which helps keep items with already short Craft/Repair times close to their original values.
+PrimitiveStructurePassiveCraftSpeedMult=0.5				// 0.1-1.0 : When the "EnableItemCraftingRevamp" setting is enabled, this multiplies the base Crafting Speed of Primitive Crafting Station Structures (Smithy, Pestle&Mortar, Campfire, etc) by this value when there are no players using them.
+IndustrialStructurePassiveCraftSpeedMult=0.75			// 0.1-1.0 : When the "EnableItemCraftingRevamp" setting is enabled, this multiplies the base Crafting Speed of Industrial Crafting Station Structures (Fabricator, Chem Bench, Industrial Grill, etc) by this value when there are no players using them.
+ItemQualityCraftTimeXPMult=1.0							// 0.0-10.0 : Scales the plugin's changes to the Craft/Repair Times and the XP earned from items which are higher than default quality. Higher values further increase the Time needed/XP earned, while lower values reduce them. Setting to 0.0 will disable the modifications.
+AllowBPUpgrades=true									// Toggles whether the Blueprint Upgrading System is enabled.
+ForceClampItemStats=true								// Functions similarly to the default "ClampItemStats" Ini Setting, but all items actively receive stat clamps if enabled, instead of only during server restarts.
+ItemMaxStat=40000										// 0-65535 : Determines the max stat value an Item can possibly have, whether the item was found in a loot drop or player crafted. You will likely want to clear any default "ItemStatClamps" Ini Settings that were previously set, if any.
+BPMaxStat=30000											// 0-65535 : Determines the max stat value players are able to upgrade Blueprints to. Items Crafted from blueprints can still have somewhat higher stats after the Craft Skill Bonus is applied, but can never surpass the "ItemMaxStat" setting value. This value should not be set higher than the "ItemMaxStat" value.
+BPStatIncreasePerCraft=1000								// 100-10000 : Determines the base rate which a blueprint's stat increases with each craft. This scales relative to the Crafter's Crafting Skill stat.
+TranscribeBPCooldownHours=0.5							// 0-24 (Hours) : Determines the cooldown each player must wait between Transcribing a new Blueprint item. Setting below 0 disables the ability.
+DisassembleItemCooldownHours=0.25						// 0-24 (Hours) : Determines the cooldown each player must wait between Item Disassembles. Setting below 0 disables the ability.
+
+
+// [Platform Settings]
+UsePlatformVehicleStructureCountSpeedScale=true			// Determines whether vehicles with platforms that can be built on such as Rafts and Skiffs slow down somewhat based on how many structures are built upon them.
+RaftMaxStructureLimit=400								// 70 Default : Determines the max number of structures that can be placed on Rafts.
+RaftMaxStructureBuildDistance=2000						// 1400 Default : Determines the max build distance allowed from the center of Rafts.
+RaftMaxStructureHeightDistance=1250						// 1100 Default : Determines the max build height allowed from the base of Rafts.
+MotorRaftMaxStructureLimit=800							// 110 Default : Determines the max number of structures that can be placed on Motor Rafts.
+MotorRaftMaxStructureBuildDistance=2500					// 1900 Default : Determines the max build distance allowed from the center of Motor Rafts.
+MotorRaftMaxStructureHeightDistance=1650				// 1550 Default : Determines the max build height allowed from the base of Motor Rafts.
+HoverSkiffMaxStructureLimit=100							// 50 Default : Determines the max number of structures that can be placed on Hover Skiffs.
+
+
+// [Player Settings]
+EnablePlayerSizeAffectsStats=true						// Toggles whether a player's overall size from the character creation menu affects their stats.
+PlayerDeathPenaltyEXPLossPercent=1.0					// 0.0-1.0 : Determines how much experience a player loses upon death. Ranges from 0-100% of a level's worth of exp.
+EnableMindwipePenalty=true								// Toggles whether consuming a Mindwipe Tonic causes the player to lose one level's worth of experience or not.
+EnableLevelUpEngramPointChanges=true					// Toggles whether the changes to the amount of Engram Points gained per player level up are enabled or not.
+MaxPlayerLevelUps=199									// Determines the max number of times players can level up. Automatically calculates LevelExperienceRampOverrides balanced based on new plugin changes. If you wish to customize the Level Experience Ramp values, you'll need to manually set that all up in your server's default Ini Settings, and simply set this value to equal the max number of player level ups you configured. Otherwise, don't forget to remove any previously modified "LevelExperienceRampOverrides" you may have set.
+EnablePlayerStatClamps=true								// Toggles whether the following MaxPlayerStat Clamps are used or not.
+MaxPlayerHealthMult=20.0								// 1.0+ : Determines the max multiple a player's Health stat can be relative to the stat's base value, preventing further level up points from being allocated.
+MaxPlayerStaminaMult=10.0								// 1.0+ : Determines the max multiple a player's Stamina stat can be relative to the stat's base value, preventing further level up points from being allocated.
+MaxPlayerOxygenMult=20.0								// 1.0+ : Determines the max multiple a player's Oxygen stat can be relative to the stat's base value, preventing further level up points from being allocated.
+MaxPlayerFoodMult=20.0									// 1.0+ : Determines the max multiple a player's Food stat can be relative to the stat's base value, preventing further level up points from being allocated.
+MaxPlayerWaterMult=20.0									// 1.0+ : Determines the max multiple a player's Water stat can be relative to the stat's base value, preventing further level up points from being allocated.
+MaxPlayerWeightMult=20.0								// 1.0+ : Determines the max multiple a player's Weight stat can be relative to the stat's base value, preventing further level up points from being allocated.
+MaxPlayerDamageMult=10.0								// 1.0+ : Determines the max multiple a player's Melee Damage stat can be relative to the stat's base value, preventing further level up points from being allocated.
+MaxPlayerSpeedMult=2.0									// 1.0+ : Determines the max multiple a player's Movement Speed stat can be relative to the stat's base value, preventing further level up points from being allocated.
+MaxPlayerFortitude=300.0								// 0.0+ : Determines the max amount a player's Fortitude stat can be, preventing further level up points from being allocated.
+MaxPlayerCraftingMult=20.0								// 1.0+ : Determines the max multiple a player's Crafting Skill stat can be relative to the stat's base value, preventing further level up points from being allocated.
+BasicMindwipeCooldownHours=12							// 0-24 (Hours) : Determines the time players must wait between using the "/StatMindwipe" command, which only resets the player's stat point allocations, keeping learned Engrams intact.
+
+
+// [Dino Settings]
+EnableModCreatureOptIn=true								// Toggles whether the plugin will attempt to apply its changes to specific creature types to any mod based creatures where applicable. (For example: A mod adds a new Baryonyx variant with the standard Baryonyx formatting. If enabled- the plugin will apply the default Baryonyx stat changes to it, as well new capabilities added to the default Baryonyx, such as the ability to gain the Hydration Buff when in the rain/water.) Certain mods which might not have been made with the best compatibility practices in mind could possibly not receive the plugin's changes to its creatures even when enabled, and could possibly benefit from disabling this setting to avoid some undesired changes to the mod's creatures.
+EnableKibbleBonuses=true								// Toggles whether Kibbles have their secondary effect enabled of granting a dose of Experience and Imprint Quality to creatures that consume them naturally while being allowed to wander around freely.
+EnableBetterHerbivoreTaming=true						// Toggles whether Veggies tame Herbivores slightly quicker than default, and whether Honey acts as a sort of Prime Meat equivalent for Herbivore taming.
+EnableWildDinoSpawnWeightChanges=true					// Toggles whether wild dinos will use a new spawn level weight distribution, allowing dinos up to level 400 (rarely) to spawn with a server Difficulty rating of 5.0, up from the usual max level of 150.
+EnableMutagenMutating=true								// Toggles whether the reworked Mutagen stat Mutation system is enabled.
+EnableMutagenRetraining=true							// Toggles whether Mutagen stat Retraining is enabled through the use of 'Retrain' folder commands.
+MutagenMutationRequiredBaseLevel=100					// Determines the minimum base level a creature must be to undergo Mutagen Stat Mutations / Retrainings.
+MutagenMutationStatAdd=2								// 1-10 : Determines the number of a points a stat will increase by when affected by a Mutagen stat mutation.
+MutagenBaseFoodRequiredPercent=0.5						// 0.0-0.99 : Determines the amount of Food required for a creature to undergo a Mutagen stat mutation or retraining relative to its base Food stat.
+MutagenUsedCryoSicknessDuration=300.0					// 10.0-86400.0 (Seconds) : Determines the duration a creature will receive Cryo-Sickness for after being effected by a Mutagen stat mutation or retraining. It cannot undergo another until the effect wears off.
+MaxDinoBaseStat=100										// Determines the max number of base levels allowed to be allocated to a specific individual stat of a creature, through breeding or any other means.
+MaxDinoBaseLevel=400									// Determines the max allowed base level of tamed dinos. The default "DestroyTamesOverLevelClamp" Ini Setting is now automatically set to the sum of this value and the 'MaxDinoLevelUps' setting found here.
+MaxDinoLevelUps=100										// Determines the max number of times creatures can level up. Automatically calculates LevelExperienceRampOverrides balanced based on new plugin changes. If you wish to customize the Level Experience Ramp values, you'll need to manually set that all up in your server's default Ini Settings, and simply set this value to equal the max number of dino level ups you configured. Otherwise, don't forget to remove any previously modified "LevelExperienceRampOverrides" you may have set.
+MaxWildDinoTameLevel=200								// Determines the max level a wild dino can be for it to be tameable.
+PassiveTameRequiredLevelEqualsBaseLevel=true			// Toggles whether the required level players must be to passively tame certain creatures now equals the creature's base level. Setting to false uses Ark's default required level thresholds per creature.
+MaxTamingEffectivenessBonus=0.0							// 0.0-1.0 : Determines the max taming bonus levels a dino can receive as a percentage of its base level based on its taming effectiveness.
+EnableDinoStatClamps=true								// Toggles whether the following MaxDinoStat Clamps are used or not.
+MaxDinoHealthMult=20.0									// 1.0+ : Determines the max multiple a creature's Health stat can be relative to its base value, preventing further level up points from being allocated.
+MaxDinoStaminaMult=10.0									// 1.0+ : Determines the max multiple a creature's Stamina stat can be relative to its base value, preventing further level up points from being allocated.
+MaxDinoOxygenMult=20.0									// 1.0+ : Determines the max multiple a creature's Oxygen stat can be relative to its base value, preventing further level up points from being allocated.
+MaxDinoFoodMult=20.0									// 1.0+ : Determines the max multiple a creature's Food stat can be relative to its base value, preventing further level up points from being allocated.
+MaxDinoWeightMult=10.0									// 1.0+ : Determines the max multiple a creature's Weight stat can be relative to its base value, preventing further level up points from being allocated.
+MaxDinoDamageMult=10.0									// 1.0+ : Determines the max multiple a creature's Melee Damage stat can be relative to its base value, preventing further level up points from being allocated.
+MaxDinoSpeedMult=2.0									// 1.0+ : Determines the max multiple a creature's Movement Speed stat can be relative to its base value, preventing further level up points from being allocated.
+MaxDinoCraftingMult=2.0									// 1.0+ : Determines the max multiple a creature's Crafting Skill stat can be relative to its base value, preventing further level up points from being allocated.
+
+
+// [Recommended Ini Setting Overrides]
+EnableIniOverrides=true									// Toggles whether the following Recommended Server Ini Settings will be used to override any corresponding default values. Set to false if you want your server's default settings to be used instead, though it's still recommended to re-evaluate the following settings for your server based on the new recommended values + balance changes. You can also optionally keep this enabled, and just alter any of the values listed here directly for easy access.
+OverrideDifficulty=5.0									// Overrides the default "OverrideOfficialDifficulty" Ini Setting, balanced based on new plugin changes. Wild dinos will spawn up to level 400 (rarely) with a Difficulty value of 5.0 when the "EnableWildDinoSpawnWeightChanges" setting is enabled.
+OverrideLimitTurretsInRange=true						// Overrides the default "bLimitTurretsInRange" Ini Setting, balanced based on new plugin changes.
+OverrideLimitTurretsRange=10000							// Overrides the default "LimitTurretsRange" Ini Setting, balanced based on new plugin changes.
+OverrideLimitTurretsNum=50								// Overrides the default "LimitTurretsNum" Ini Setting, balanced based on new plugin changes now that tamed dino health stats aren't able to scale quite as high by default.
+OverrideMaxGateFrameOnSaddles=2							// Overrides the default "MaxGateFrameOnSaddles" Ini Setting, balanced based on new plugin changes.
+OverrideAllowFlyerSpeedLevelUps=true					// Overrides the default "bAllowFlyerSpeedLeveling" Ini Setting, balanced based on new plugin changes.
+OverrideAllowRaidDinoFeeding=true						// Overrides the default "AllowRaidDinoFeeding" Ini Setting, balanced based on new plugin changes.
+OverrideMatingIntervalMultiplier=0.5					// Overrides the default "MatingIntervalMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideEggHatchSpeedMultiplier=2.0						// Overrides the default "EggHatchSpeedMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideBabyMatureSpeedMultiplier=2.0					// Overrides the default "BabyMatureSpeedMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideBabyCuddleIntervalMultiplier=0.5				// Overrides the default "BabyCuddleIntervalMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideBabyFoodConsumptionSpeedMultiplier=2.0			// Overrides the default "BabyFoodConsumptionSpeedMultiplier" Ini Setting, balanced based on new plugin changes.
+OverridePlayerHarvestingDamageMultiplier=0.5			// Overrides the default "PlayerHarvestingDamageMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideDinoHarvestingDamageMultiplier=1.0				// Overrides the default "DinoHarvestingDamageMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideUseOptimizedHarvestHealth=true					// Overrides the default "UseOptimizedHarvestingHealth" Ini Setting. You most likely will want to keep this enabled as some of the other plugin changes make harvesting appear similarly to as if this setting was on even if it's not, so you might as well improve the harvesting optimization on your server as well.
+OverrideAllowUnlimitedRespecs=false						// Overrides the default "bAllowUnlimitedRespecs" Ini Setting, balanced based on new plugin changes.
+OverrideDayCycleSpeedScale=0.84458						// Overrides the default "DayCycleSpeedScale" Ini Setting, changing it so that 1 Ark Day is 1 Real-Time Hour by default.
+OverrideGenericXPMultiplier=1.0							// Overrides the default "GenericXPMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideKillXPMultiplier=1.0							// Overrides the default "KillXPMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideHarvestXPMultiplier=2.0							// Overrides the default "HarvestXPMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideCraftXPMultiplier=1.0							// Overrides the default "CraftXPMultiplier" Ini Setting, balanced based on new plugin changes.
+OverrideSpecialXPMultiplier=5.0							// Overrides the default "SpecialXPMultiplier" Ini Setting, balanced based on new plugin changes.

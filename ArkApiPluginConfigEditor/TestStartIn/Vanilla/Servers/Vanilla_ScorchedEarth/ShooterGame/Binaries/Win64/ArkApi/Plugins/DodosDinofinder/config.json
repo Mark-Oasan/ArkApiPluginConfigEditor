@@ -1,0 +1,20 @@
+﻿{
+    "command" : "/finddino",    
+    "displayScale" : 1.6,
+    "displayTime" : 10,
+    "displayAmount" : 3,
+    "searchRangeSmall" : 1000,
+    "searchRangeLarge" : 3000,
+    "inactiveLimit" : 1,
+    "blackList" : ["SpaceWhale_Character_BP"],
+    "textColor" : {
+        "red" : 73,
+        "green" : 214,
+        "blue" : 37
+    },
+    "texts" : {
+        "foundOverview" : "Found {0} dinos. Will show max. {1}.",
+        "foundDino" : "{0} at Lat: {1} Lon: {2} height: {3}",
+        "notFound" : "No dino found."
+    }
+}
