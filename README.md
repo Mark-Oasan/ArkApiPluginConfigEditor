@@ -23,13 +23,19 @@
 - raw data for adding new elements to the json
 
 ### Defaults
-- StartIn (all servers directory) sample
+#### StartIn (all maps/server directory) sample
 ```
 "C:/ArkSe/Servers/"
 ```
-- plugin location must be in
+
+#### plugin location must be in
 ```
-"C:/ArkSe/Servers/ShooterGame/Binaries/Win64/Plugins"
+"C:/ArkSe/Servers/<MAPNAME>/ShooterGame/Binaries/Win64/ArkApi/Plugins/<PLUGINNAME>"
+```
+
+#### Config file location
+```
+"C:/ArkSe/Servers/<MAPNAME>/ShooterGame/Binaries/Win64/ArkApi/Plugins/<PLUGINNAME>/config.json"
 ```
 
 ![Plugin selection](/ss/ss2.png?raw=true)
