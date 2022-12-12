@@ -1,9 +1,7 @@
 # ArkApi Plugin Config Editor
 
-### This is a editor config.json editor for your Ark survival evovled Plugins from Ark Api
+### This is config.json editor for Ark Survival Evovled Ark Api Plugins made from WPF (Windows Presentation Foundation) in C# .NET6.0
 ### Here's the link for the [Ark APi Framework](https://gameservershub.com/forums/resources/ark-server-api.12/)
-### This is made from WPF (Windows Presentation Foundation) in C# .NET6.0
-
 
 # Requirements
 - Windows only
