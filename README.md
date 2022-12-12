@@ -28,6 +28,7 @@
 "C:/ArkSe/Servers/"
 ```
 ![Plugin selection](/ss/ss2.png?raw=true)
+![Maps](/ss/ss4.png?raw=true)
 ![Sample](/ss/ss1.png?raw=true)
 ![Raw data](/ss/ss3.png?raw=true)
-![Maps](/ss/ss4.png?raw=true)
+
