@@ -19,14 +19,15 @@
 - raw data for adding new elements to the json
 
 ### Defaults
-- plugin location must be
-```
-"ARK\ShooterGame\Binaries\Win64\Plugins"
-```
-- StartIn (all servers directory
+- StartIn (all servers directory) sample
 ```
 "C:/ArkSe/Servers/"
 ```
+- plugin location must be in
+```
+"C:/ArkSe/Servers/ShooterGame/Binaries/Win64/Plugins"
+```
+
 ![Plugin selection](/ss/ss2.png?raw=true)
 ![Maps](/ss/ss4.png?raw=true)
 ![Sample](/ss/ss1.png?raw=true)
